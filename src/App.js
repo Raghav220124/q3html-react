@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.scss';
+import Fonts from './Components/Fonts';
 function App() {
   return (
     <div className="App">
@@ -8,6 +8,7 @@ function App() {
         <h2>FOnt changes</h2>
 
       </header>
+      <Fonts />
     </div>
   );
 }

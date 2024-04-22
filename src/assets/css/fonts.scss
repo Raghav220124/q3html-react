@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Roboto100;
+    src: url(./../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto400;
+    src: url(./../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto500;
+    src: url(./../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto700;
+    src: url(./../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+.roboto_light{
+    font-family: Roboto100, sans-serif !important;
+    font-weight: initial !important;
+}
+.roboto_regular{
+    font-family: Roboto400, sans-serif !important;
+    font-weight: initial !important;
+}
+.roboto_medium{
+    font-family: Roboto500, sans-serif !important;
+    font-weight: initial !important;
+}
+.roboto_bold{
+    font-family: Roboto700, sans-serif !important;
+    font-weight: initial !important;
+}
