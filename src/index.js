@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.scss';
 import App from './App';
-import Spacing from './components/variables/spacing';
+import Spacing from './components/spacing/spacing';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
