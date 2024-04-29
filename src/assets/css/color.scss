@@ -1,0 +1,117 @@
+$Cool-shade: #1B242C;
+$Cool-shade-a: #272E35;
+$Cool-shade-b: #3B424A;
+$Cool-shade-c: #4A545E;
+$Cool-shade-d: #555F6D;
+$Cool-shade-e: #7D8B99;
+$Cool-shade-f: #9EA8B3;
+$Cool-shade-g: #CFD6DD;
+$Cool-shade-h: #DEE3E7;
+$Cool-shade-i: #E8ECEF;
+$Cool-shade-j: #F1F3F5;
+$Cool-shade-k: #F5F7F9;
+$Cool-shade-i: #FBFCFD;
+
+
+$Neutral-shade: #2B3239;
+$Neutral-shade-a: #2D343B;
+$Neutral-shade-b: #32383F;
+$Neutral-shade-c: #383F45;
+$Neutral-shade-d: #3D4349;
+$Neutral-shade-e: #41474D;
+$Neutral-shade-f: #5B6064;
+$Neutral-shade-g: #7D8286;
+$Neutral-shade-h: #B2B4B6;
+$Neutral-shade-i: #BABCBE;
+$Neutral-shade-j: #C3C4C6;
+$Neutral-shade-k: #D8D9DB;
+$Neutral-shade-i: #FFFFFF;
+
+$Warm-shade: #222222;
+$Warm-shade-a: #2D2D2D;
+$Warm-shade-b: #404040;
+$Warm-shade-c: #525252;
+$Warm-shade-d: #5E5E5E;
+$Warm-shade-e: #898989;
+$Warm-shade-f: #A6A6A6;
+$Warm-shade-g: #D5D5D5;
+$Warm-shade-h: #E2E2E2;
+$Warm-shade-i: #EBEBEB;
+$Warm-shade-j: #F2F2F2;
+$Warm-shade-k: #F7F7F7;
+$Warm-shade-i: #FCFCFC;
+
+$Brand-shade: #04215F;
+$Brand-shade-a: #103998;
+$Brand-shade-b: #1E50C0;
+$Brand-shade-c: #2759CC;
+$Brand-shade-d: #3162D4;
+$Brand-shade-e: #6792F4;
+$Brand-shade-f: #8DB0FB;
+$Brand-shade-g: #CDDEFF;
+$Brand-shade-h: #D8E3FF;
+$Brand-shade-i: #E4EDFF;
+$Brand-shade-j: #EDF2FF;
+$Brand-shade-k: #F6F8FF;
+$Brand-shade-i: #FAFBFF;   
+
+$Brand-shade-red: #C53434;
+$Brand-shade-yellow: #F59638;
+$Brand-shade-green: #1D7C4D;
+
+
+.color-sec h1{
+    color: $Cool-shade-a;
+}
+
+.color-bx-1{
+    background-color: $Cool-shade-a;
+}
+.color-bx-2{
+    background-color: $Cool-shade-h;
+}
+.color-bx-3{
+    background-color: $Neutral-shade-a;
+}
+.color-bx-4{
+    background-color: $Neutral-shade-h;
+}
+.color-bx-5{
+    background-color: $Warm-shade-a;
+}
+.color-bx-6{
+    background-color: $Warm-shade-h;
+}
+.color-bx-7{
+    background-color: $Brand-shade-a;
+}
+.color-bx-8{
+    background-color: $Brand-shade-h;
+}
+
+.color-bx-red{
+    background-color: $Brand-shade-red;
+}
+
+.color-bx-yellow{
+    background-color: $Brand-shade-yellow;
+}
+
+.color-bx-green{
+    background-color: $Brand-shade-green;
+}
+.color-outer-bx{
+    display: flex;
+}
+
+.color-outer-bx .color-bx{
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+
+ 
+
+
+
+

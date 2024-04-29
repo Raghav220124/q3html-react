@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.scss';
+import Colors from './color.js';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -16,7 +16,8 @@ function App() {
         >
           amit
         </a>
-      </header>
+      </header> */}
+      <Colors/>
     </div>
   );
 }
