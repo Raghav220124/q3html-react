@@ -1,0 +1,80 @@
+$Radius-2: 4px;
+$Radius-4: 8px;
+$Radius-8: 12px;
+$Radius-12: 16px;
+$Radius-14: 20px;
+$Radius-16: 24px;
+$Radius-18: 28px;
+$Radius-24: 32px;
+$Radius-28: 40px;
+$Radius-32: 48px;
+$Radius-36: 64px;
+$Radius-40: 96px;
+$Radius-44: 128px;
+$Radius-48: 160px;
+$Radius-52: 192px;
+
+$Border-width-1: 1px;
+$Border-width-2: 2px;
+$Border-width-3: 3px;
+$Border-width-4: 4px;
+
+$Border-Style-None: none;
+$Border-Style-Solid: solid;
+$Border-Style-dashed: dashed;
+
+.border-radius-2{
+    border-radius: $Radius-2;
+}
+.border-radius-8{
+    border-radius: $Radius-4;
+}
+.border-radius-12{
+    border-radius: $Radius-8;
+}
+.border-radius-16{
+    border-radius: $Radius-12;
+}
+.border-radius-20{
+    border-radius: $Radius-14;
+}
+.border-radius-24{
+    border-radius: $Radius-16;
+}
+.border-radius-28{
+    border-radius: $Radius-18;
+}
+.border-radius-32{
+    border-radius: $Radius-24;
+}
+.border-radius-40{
+    border-radius: $Radius-28;
+}
+.border-radius-48{
+    border-radius: $Radius-32;
+}
+.border-radius-64{
+    border-radius: $Radius-36;
+}
+.border-radius-96{
+    border-radius: $Radius-40;
+}
+.border-radius-128{
+    border-radius: $Radius-44;
+}
+.border-radius-160{
+    border-radius: $Radius-48;
+}
+.border-radius-192{
+    border-radius: $Radius-52;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,9 @@
 import './App.scss';
 import Colors from './color.js';
+import InlineAlert from './component/Alerts/InlineAlerts.js';
+import FullWidthAlert from './component/Alerts/FullwidthAlerts.js';
+import Avatar from './component/Avatar/Avatar.js';
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"></link>
 function App() {
   return (
     <div className="App">
@@ -18,6 +22,9 @@ function App() {
         </a>
       </header> */}
       <Colors/>
+      <Avatar/>
+      <InlineAlert/>
+      <FullWidthAlert/>
     </div>
   );
 }

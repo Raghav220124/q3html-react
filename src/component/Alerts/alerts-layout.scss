@@ -1,0 +1,14 @@
+@use '../../assets/css/border.scss' as *;
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+
+.alerts-main-bx{
+   margin: $Spacing-12;
+    display: flex;
+    gap: 10px;
+}
+
+.alerts-main-bx-full-width{
+   flex-flow: column;
+}
+

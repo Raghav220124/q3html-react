@@ -1,0 +1,111 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+
+.alert-default{
+   background-color: $Cool-shade-j;
+   display: flex;
+    padding: $Spacing-8 $Spacing-12;
+    width: 592px;
+    line-height: $Line-height-28;
+    font-size: $Font-Size-16;
+    color: $Cool-shade;
+    justify-content: space-between;
+    i{
+      padding-right: $Spacing-8;
+    }
+    span{
+      font-weight: $Font-Weight-Medium;
+      display: inline-block;
+    }
+    .more-btn{
+      font-weight: $Font-Weight-Semibold;
+       color: $Cool-shade;
+       margin-right: $Spacing-8;
+       line-height: $Line-height-28;
+       display: inline-block;
+    }
+    a, i, svg{
+      vertical-align: middle;
+      display: inline-block;
+    }
+}
+
+.alert-default-v2{
+  background-color: $Cool-shade;
+  color: $Neutral-shade-l;
+  .more-btn{
+     color: $Neutral-shade-l;
+  }
+}
+
+.alert-success{
+  background-color: $Brand-shade-green;
+}
+
+.alert-success{
+  background-color: $Brand-shade-green;
+  color: $Neutral-shade-l;
+  .more-btn{
+    color: $Neutral-shade-l;
+  }
+}
+
+.alert-success-light{
+  background-color: rgba($Brand-shade-green , 0.3)
+}
+
+.alert-success{
+  background-color: $Brand-shade-green;
+  color: $Neutral-shade-l;
+  .more-btn{
+    color: $Neutral-shade-l;
+  }
+}
+
+.alert-warning{
+  background-color: $Brand-shade-yellow;
+  color: $Cool-shade;
+  .more-btn{
+    color: $Cool-shade;
+  }
+}
+
+.alert-warning-light{
+  background-color: rgba($Brand-shade-yellow , 0.3)
+}
+
+.alert-negative{
+  background-color: $Brand-shade-red;
+  color: $Neutral-shade-l;
+  .more-btn{
+    color: $Neutral-shade-l;
+  }
+  .msg{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.alert-negative-light{
+  background-color: rgba($Brand-shade-red , 0.3);
+  .msg{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+}
+.alert-rounded{
+  padding: $Spacing-8 $Spacing-24;
+}
+.alert-round{
+  .more-btn{
+     margin-left: $Spacing-8;
+  }
+}
+
+.alert-full-width{
+  width: 100%;
+}

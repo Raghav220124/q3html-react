@@ -10,7 +10,7 @@ $Cool-shade-h: #DEE3E7;
 $Cool-shade-i: #E8ECEF;
 $Cool-shade-j: #F1F3F5;
 $Cool-shade-k: #F5F7F9;
-$Cool-shade-i: #FBFCFD;
+$Cool-shade-l: #FBFCFD;
 
 
 $Neutral-shade: #2B3239;
@@ -25,7 +25,7 @@ $Neutral-shade-h: #B2B4B6;
 $Neutral-shade-i: #BABCBE;
 $Neutral-shade-j: #C3C4C6;
 $Neutral-shade-k: #D8D9DB;
-$Neutral-shade-i: #FFFFFF;
+$Neutral-shade-l: #FFFFFF;
 
 $Warm-shade: #222222;
 $Warm-shade-a: #2D2D2D;
@@ -39,7 +39,7 @@ $Warm-shade-h: #E2E2E2;
 $Warm-shade-i: #EBEBEB;
 $Warm-shade-j: #F2F2F2;
 $Warm-shade-k: #F7F7F7;
-$Warm-shade-i: #FCFCFC;
+$Warm-shade-l: #FCFCFC;
 
 $Brand-shade: #04215F;
 $Brand-shade-a: #103998;
@@ -53,63 +53,227 @@ $Brand-shade-h: #D8E3FF;
 $Brand-shade-i: #E4EDFF;
 $Brand-shade-j: #EDF2FF;
 $Brand-shade-k: #F6F8FF;
-$Brand-shade-i: #FAFBFF;   
+$Brand-shade-l: #FAFBFF;   
 
 $Brand-shade-red: #C53434;
 $Brand-shade-yellow: #F59638;
 $Brand-shade-green: #1D7C4D;
 
 
-.color-sec h1{
-    color: $Cool-shade-a;
-}
 
-.color-bx-1{
+///////************layout Css*******************////
+
+.cool-shade{
+    background-color: $Cool-shade;
+}
+.cool-shade-a{
     background-color: $Cool-shade-a;
 }
-.color-bx-2{
+.cool-shade-b{
+    background-color: $Cool-shade-b;
+}
+.cool-shade-c{
+    background-color: $Cool-shade-c;
+}
+.cool-shade-d{
+    background-color: $Cool-shade-d;
+}
+.cool-shade-e{
+    background-color: $Cool-shade-e;
+}
+.cool-shade-f{
+    background-color: $Cool-shade-f;
+}
+.cool-shade-g{
+    background-color: $Cool-shade-g;
+}
+.cool-shade-h{
     background-color: $Cool-shade-h;
 }
-.color-bx-3{
+.cool-shade-i{
+    background-color: $Cool-shade-i;
+}
+.cool-shade-j{
+    background-color: $Cool-shade-j;
+}
+.cool-shade-k{
+    background-color: $Cool-shade-k;
+}
+.cool-shade-l{
+    background-color: $Cool-shade-l;
+}
+
+
+.neutral-shade{
+    background-color: $Neutral-shade;
+}
+.neutral-shade-a{
     background-color: $Neutral-shade-a;
 }
-.color-bx-4{
+.neutral-shade-b{
+    background-color: $Neutral-shade-b;
+}
+.neutral-shade-c{
+    background-color: $Neutral-shade-c;
+}
+.neutral-shade-d{
+    background-color: $Neutral-shade-d;
+}
+.neutral-shade-e{
+    background-color: $Neutral-shade-e;
+}
+.neutral-shade-f{
+    background-color: $Neutral-shade-f;
+}
+.neutral-shade-g{
+    background-color: $Neutral-shade-g;
+}
+.neutral-shade-h{
     background-color: $Neutral-shade-h;
 }
-.color-bx-5{
+.neutral-shade-i{
+    background-color: $Neutral-shade-i;
+}
+.neutral-shade-j{
+    background-color: $Neutral-shade-j;
+}
+.neutral-shade-k{
+    background-color: $Neutral-shade-k;
+}
+.neutral-shade-l{
+    background-color: $Neutral-shade-l;
+}
+
+.warm-shade{
+    background-color: $Warm-shade;
+}
+.warm-shade-a{
     background-color: $Warm-shade-a;
 }
-.color-bx-6{
+.warm-shade-b{
+    background-color: $Warm-shade-b;
+}
+.warm-shade-c{
+    background-color: $Warm-shade-c;
+}
+.warm-shade-d{
+    background-color: $Warm-shade-d;
+}
+.warm-shade-e{
+    background-color: $Warm-shade-e;
+}
+.warm-shade-f{
+    background-color: $Warm-shade-f;
+}
+.warm-shade-g{
+    background-color: $Warm-shade-g;
+}
+.warm-shade-h{
     background-color: $Warm-shade-h;
 }
-.color-bx-7{
+.warm-shade-i{
+    background-color: $Warm-shade-i;
+}
+.warm-shade-j{
+    background-color: $Warm-shade-j;
+}
+.warm-shade-k{
+    background-color: $Warm-shade-k;
+}
+.warm-shade-l{
+    background-color: $Warm-shade-l;
+}
+
+.brand-shade{
+    background-color: $Brand-shade;
+}
+.brand-shade-a{
     background-color: $Brand-shade-a;
 }
-.color-bx-8{
+.brand-shade-b{
+    background-color: $Brand-shade-b;
+}
+.brand-shade-c{
+    background-color: $Brand-shade-c;
+}
+.brand-shade-d{
+    background-color: $Brand-shade-d;
+}
+.brand-shade-e{
+    background-color: $Brand-shade-e;
+}
+.brand-shade-f{
+    background-color: $Brand-shade-f;
+}
+.brand-shade-g{
+    background-color: $Brand-shade-g;
+}
+.brand-shade-h{
     background-color: $Brand-shade-h;
 }
+.brand-shade-i{
+    background-color: $Brand-shade-i;
+}
+.brand-shade-j{
+    background-color: $Brand-shade-j;
+}
+.brand-shade-k{
+    background-color: $Brand-shade-k;
+}
+.brand-shade-l{
+    background-color: $Brand-shade-l;
+}
 
-.color-bx-red{
+.brand-red{
     background-color: $Brand-shade-red;
 }
-
-.color-bx-yellow{
+.brand-yellow{
     background-color: $Brand-shade-yellow;
 }
-
-.color-bx-green{
+.brand-green{
     background-color: $Brand-shade-green;
+}
+
+
+
+.color-sec h1{
+    color: $Cool-shade-a;
 }
 .color-outer-bx{
     display: flex;
 }
-
-.color-outer-bx .color-bx{
-    width: 50px;
-    height: 50px;
-    margin: 0 5px;
+.sub-heading{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin: 32px 0 0;
+}
+.color-sec{
+    padding: 32px;
+}
+$Spacing-192: 192px;
+.color-sec h1{
+    margin:0;
+    background: rgb(223,224,255);
+    background: linear-gradient(90deg, rgba(223,224,255,1) 0%, rgba(255,236,254,1) 50%);
+    padding: 72px;
+    border-radius: 32px;
 }
 
+.color-outer-bx {
+    margin-top: 20px;
+}
+.color-outer-bx .color-bx{
+    width: 89px;
+    height: 58px;
+    margin: 0 2.5px;
+}
+.color-details-bx span{
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 12px;
+    color: #000;
+}
  
 
 

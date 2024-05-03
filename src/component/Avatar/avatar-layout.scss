@@ -1,0 +1,23 @@
+@use '../../assets/css/border.scss' as *;
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+
+.avatar-border-main-bx{
+  display: flex;
+  gap: 10px;
+}
+
+.avatar-border-bx{
+   border: $Border-width-1 $Border-Style-dashed  #9747FF;
+   padding: $Spacing-20;
+}
+
+.avatar-border-bx{
+   .avatar-bx{
+      margin-bottom: $Spacing-8;
+   }
+   .avatar-bx-name {
+    margin-bottom: $Spacing-12;
+  }
+}
+
