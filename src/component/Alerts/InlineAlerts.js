@@ -205,7 +205,7 @@ function InlineAlert() {
                         <span>Please upgrade to the new version.</span>
                     </div>
                 </div>
-                <div className='alert-default rounded border-radius-192'>
+                <div className='alert-default alert-rounded border-radius-192'>
                     <div>
                         <span>Please upgrade to the new version.</span>
                     </div>
@@ -213,7 +213,7 @@ function InlineAlert() {
                 </div>
             </div>
             <div className="alerts-main-bx">
-            <div className='alert-default round border-radius-12'>
+            <div className='alert-default alert-round border-radius-12'>
                     <div>
                         <i>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

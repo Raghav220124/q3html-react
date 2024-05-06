@@ -99,6 +99,9 @@
 }
 .alert-rounded{
   padding: $Spacing-8 $Spacing-24;
+  .more-btn{
+    margin-right: 0;
+ }
 }
 .alert-round{
   .more-btn{

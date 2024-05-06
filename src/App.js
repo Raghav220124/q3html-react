@@ -3,6 +3,9 @@ import Colors from './color.js';
 import InlineAlert from './component/Alerts/InlineAlerts.js';
 import FullWidthAlert from './component/Alerts/FullwidthAlerts.js';
 import Avatar from './component/Avatar/Avatar.js';
+import Badge from './component/Badge/Badge.js';
+import Breadcrum from './component/Breadcrum/Breadcrum.js';
+import Buttons from './component/Buttons/Buttons.js';
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"></link>
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
       <Avatar/>
       <InlineAlert/>
       <FullWidthAlert/>
+      <Badge/>
+      <Breadcrum/>
+      <Buttons/>
     </div>
   );
 }
