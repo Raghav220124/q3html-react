@@ -1,0 +1,26 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+
+.checkbox{
+  display: inline-block;
+  label{
+    input{
+      margin: 0;
+      opacity: 0;
+      &label:checked .custom-mark{
+        background-color: $Brand-shade-b;
+      }
+    }
+    .custom-mark{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $Cool-shade-j;
+      line-height: 20px;
+      text-align: center;
+    }  
+    cursor: pointer;
+  }
+}

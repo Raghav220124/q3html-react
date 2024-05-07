@@ -1,0 +1,87 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+
+.btn{
+  font-size: $Font-Size-18;
+  line-height: $Line-height-30;
+  font-weight: $Font-Weight-Medium;
+  padding: $Spacing-8 $Spacing-16;
+  border: none;
+  color:$Brand-shade-i;
+  border: $Border-width-1 $Border-Style-Solid $Brand-shade-c;
+  i{
+    width: 24px;
+    height: 24px;
+    display:inline-block;
+    vertical-align: middle;
+    padding: 0 $Spacing-10;
+  }
+}
+
+.btn.btn-light{
+  background-color: rgba($Brand-shade-c, 0.3);
+  color: $Brand-shade-c;
+  border-color:rgba($Brand-shade-c, 0.1);
+}
+
+.btn.btn-border{
+  background-color: $Neutral-shade-l;
+  color: $Brand-shade-c;
+  border: $Border-width-1 $Border-Style-Solid $Brand-shade-c;
+}
+.btn.btn-white{
+  background-color: $Neutral-shade-l;
+  color: $Brand-shade-c;
+  border-color:$Neutral-shade-l;
+}
+.btn.btn-disabled{
+  background-color: $Cool-shade-h;
+  color: $Cool-shade-e;
+  border-color:$Cool-shade-h;
+}
+
+.btn.btn-lg{
+  padding: $Spacing-4 $Spacing-10;
+  font-size: $Font-Size-16;
+  i{
+    padding: 0 $Spacing-4;
+    width: 22px;
+    height: 22px
+    svg{
+      width: 22px;
+      height: 22px;
+    };
+  }
+}
+
+.btn.btn-md{
+  padding: $Spacing-4 $Spacing-10;
+  line-height: $Line-height-18;
+  font-size: $Font-Size-14;
+  i{
+    padding: 0 $Spacing-10;
+    width: 20px;
+    height: 20px;
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.btn.btn-sm{
+  padding: $Spacing-4 $Spacing-4;
+  line-height: $Line-height-18;
+  font-size: $Font-Size-12;
+  i{
+    padding: 0 $Spacing-4;
+    width: 20px;
+    height: 20px;
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

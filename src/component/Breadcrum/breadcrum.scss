@@ -1,0 +1,43 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+
+.breadcrumb-nav ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  li{
+    span{
+      line-height: $Line-height-24;
+      font-size: $Font-Size-14;
+      font-weight: $Font-Weight-Medium;
+      color: $Cool-shade-a;
+      display: inline-block;
+    }
+  }
+  a{
+    line-height: $Line-height-24;
+    font-size: $Font-Size-14;
+    font-weight: $Font-Weight-Medium;
+    color: $Cool-shade-a;
+    display: inline-block;
+  }
+  i{
+    display: inline-block;
+ vertical-align: middle;
+ padding-right: $Spacing-8;
+  width: 20px;
+  height: 20px;
+  }
+}
+
+.breadcrumb-nav{
+  .breadcrumb-item.active{
+    span{
+      color: $Brand-shade-d;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+$Elevation-color-xs: rgba(27, 36, 44, 0.12);
+$Elevation-color-sm: rgba(27, 36, 44, 0.04);
+$Elevation-color-md: rgba(27, 36, 44, 0.08);
+$Elevation-color-lg: rgba(27, 36, 44, 0.1);
+$Elevation-ring-xs: 0 2px 1px 0;
+$Elevation-ring-sm: 0 8px 4px 0;
+$Elevation-ring-md: 0 8px 16px 0;
+$Elevation-ring-lg: 0 24px 16px 0;
+
+.elevation-bottom-100{
+   box-shadow: $Elevation-ring-xs ($Elevation-color-xs);
+}
+.elevation-bottom-200{
+    box-shadow: $Elevation-ring-sm ($Elevation-color-sm);
+ }
+ .elevation-bottom-300{
+    box-shadow: $Elevation-ring-md ($Elevation-color-md);
+ }
+ .elevation-bottom-400{
+    box-shadow: $Elevation-ring-lg ($Elevation-color-lg);
+ }
+
+
+
+
+
