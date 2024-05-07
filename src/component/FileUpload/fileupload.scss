@@ -1,0 +1,61 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+
+.file-upload{
+   display: inline-block;
+   border: $Border-width-1 $Border-Style-Solid $Cool-shade-g;
+   border-radius: $Radius-8;
+   min-width: 340px;
+   .upload-bx{
+    position: relative;
+    text-align: center;
+    padding: $Spacing-16 $Spacing-40;
+    span{
+      display: block;
+    }
+    .main-text{
+      font-size: $Font-Size-16;
+      font-weight: $Font-Weight-Medium;
+      color: $Cool-shade;
+      line-height: $Line-height-28;
+    }
+    .sub-text{
+      font-weight: $Font-Weight-Regular;
+      color: $Cool-shade-e;
+      line-height: $Line-height-18;
+      font-size: $Font-Size-14;
+    }
+    .custom-btn{
+      background-color: $Brand-shade-c;
+      display: inline-block;
+      font-size: $Font-Size-16;
+      font-weight: $Font-Weight-Medium;
+      color: $Cool-shade-l;
+      line-height: $Line-height-28;
+      padding: $Spacing-4 $Spacing-16;
+      border-radius: $Radius-24;
+      margin-top: $Spacing-12;
+    }
+    input{
+      width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+   }
+}
+}
+
+
+.file-upload.upload-v3{
+  .or-text{
+    font-size: $Font-Size-14;
+    font-weight: $Font-Weight-Bold;
+    color: $Cool-shade;
+    line-height: $Line-height-24;
+    margin-top: $Spacing-12;
+  }
+}

@@ -6,6 +6,9 @@ import Avatar from './component/Avatar/Avatar.js';
 import Badge from './component/Badge/Badge.js';
 import Breadcrum from './component/Breadcrum/Breadcrum.js';
 import Buttons from './component/Buttons/Buttons.js';
+import Chips from './component/Chips/Chips.js';
+import Checkbox from './component/Checkbox/checkbox.js';
+import FileUpload from './component/FileUpload/FileUpload.js';
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"></link>
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
       <Badge/>
       <Breadcrum/>
       <Buttons/>
+      <Chips/>
+      <Checkbox/>
+      <FileUpload/>
     </div>
   );
 }
