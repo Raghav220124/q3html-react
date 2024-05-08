@@ -1,0 +1,70 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+
+.pagination{
+    padding: 0;
+    display: flex;
+    list-style: none;
+    li{
+      a{
+        padding: $Spacing-10 $Spacing-12;
+        text-align: center;
+        font-size: $Font-Size-14;
+        line-height: $Line-height-18;
+        font-weight: $Font-Weight-Semibold;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        text-decoration: none;
+        background-color: $Warm-shade-i;    
+        border: $Border-width-1 $Border-Style-Solid $Warm-shade-h;    
+      }
+      a.page-next, a.page-previous{
+        padding: $Spacing-8;
+      }
+      &:hover{
+       a{
+        background-color: $Brand-shade-c;
+        color: $Neutral-shade-l;
+        border-color: $Brand-shade-c; 
+        svg{
+          path{
+            fill: $Neutral-shade-l;
+          }
+        }
+       }
+      }
+    }
+    li.page-item.active{
+      a{
+        background-color: $Brand-shade-c;
+        color: $Neutral-shade-l;
+        border-color: $Brand-shade-c;    
+      }
+    }
+}
+.pagination.pagination-soft{
+  a.page-next{
+    border-radius: 0 $Radius-2 $Radius-2 0;
+  }
+  a.page-previous{
+    border-radius: $Radius-2 0 0 $Radius-2;
+  }
+}
+.pagination.pagination-round{
+  a.page-next{
+    border-radius: 0 $Radius-8 $Radius-8 0;
+  }
+  a.page-previous{
+    border-radius: $Radius-8 0 0 $Radius-8;
+  }
+}
+.pagination.pagination-rounded{
+  a{
+    border-radius:$Radius-24;
+    margin: 0 $Spacing-4;
+  }
+}

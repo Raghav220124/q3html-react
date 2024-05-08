@@ -1,0 +1,78 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+
+.form-field {
+  width: 100%;
+  margin-bottom: $Spacing-20;
+  label{
+    color: $Cool-shade-a;
+    font-size: $Font-Size-12;
+    font-weight: $Font-Weight-Regular;
+    line-height: $Line-height-22;
+    display: block;
+    padding-bottom: $Spacing-4;
+  }
+  input, select, textarea{
+    background-color: $Cool-shade-j;
+    padding: $Spacing-8 $Spacing-16;
+    border: $Border-width-1 $Border-Style-Solid  $Cool-shade-j;
+    color: $Cool-shade-e;
+    font-size: $Font-Size-16;
+    font-weight: $Font-Weight-Medium;
+    line-height: $Line-height-28;
+    appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    &:focus{
+      background-color: $Neutral-shade-l;
+      border-color: $Brand-shade-c;
+      outline: none;
+    }
+    &:hover{
+      background-color: $Neutral-shade-l;
+      border-color: $Brand-shade-c;
+      outline: none;
+    }
+  }
+}
+
+.form-field.invalid, .form-field.form-field-border.invalid{
+  input, select, textarea{
+    background-color: rgba( $Brand-shade-red, 0.06) !important;
+    border-color: $Brand-shade-red !important;
+  }
+}
+
+.form-field, .form-field-border{
+  input:disabled, select:disabled, textarea:disabled{
+     background-color:$Cool-shade-i !important;
+     &:hover{
+      border-color: $Cool-shade-i !important;
+     }
+  }
+}
+
+.form-field.form-round{
+  input, select, textarea{
+    border-radius: $Radius-4;
+  }
+}
+
+.form-field{
+  textarea{
+    background: $Neutral-shade-l;
+    border-color: $Neutral-shade-i;
+  }
+}
+
+
+
+
+
+
+
+
+
+

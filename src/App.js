@@ -9,6 +9,10 @@ import Buttons from './component/Buttons/Buttons.js';
 import Chips from './component/Chips/Chips.js';
 import Checkbox from './component/Checkbox/checkbox.js';
 import FileUpload from './component/FileUpload/FileUpload.js';
+import InputField from './component/InputField/InputField.js';
+import Pagination from './component/Pagination/pagination.js';
+import TextArea from './component/TextArea/textarea.js';
+import Toast from './component/Toast/Toast.js';
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"></link>
 function App() {
   return (
@@ -37,6 +41,10 @@ function App() {
       <Chips/>
       <Checkbox/>
       <FileUpload/>
+      <InputField/>
+      <Pagination/>
+      <TextArea/>
+      <Toast/>
     </div>
   );
 }

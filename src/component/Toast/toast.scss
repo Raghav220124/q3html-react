@@ -1,0 +1,108 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+@use '../../assets/css/elevation.scss' as *;
+
+.toast-default{
+  padding: $Spacing-10 $Spacing-40 $Spacing-10 $Spacing-20;
+  display: flex;
+  align-items: center;
+  width: 323px;
+  background-color:$Cool-shade-i;
+  position: relative;
+  box-sizing: border-box;
+  .toast-text{
+    margin-left: $Spacing-10;
+    h6{
+      font-size: $Font-Size-16;
+      line-height: $Line-height-28;
+      font-weight: $Font-Weight-Semibold;
+      margin: 0;
+      color: $Cool-shade-a;
+    }
+    p{
+      font-size: $Font-Size-12;
+      line-height: $Line-height-22;
+      font-weight: $Font-Weight-Medium;
+      margin: 0;
+      color: $Cool-shade-d;
+    }
+  }
+  .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+}
+.toast-success{
+  background-color: #C5EFC4;
+}
+.toast-error{
+  background-color: #F6CBCB;
+}
+.toast-info{
+  background-color: #D8EFFF;
+}
+.toast-warning{
+  background-color: #FAF3CB;
+}
+
+.toast-default.toast-success.toast-w-shadow{
+background-color: $Neutral-shade-l;
+border-left: $Border-width-2 $Border-Style-Solid #50AA4E;
+-webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.toast-default.toast-error.toast-w-shadow{
+  background-color: $Neutral-shade-l;
+  border-left: $Border-width-2 $Border-Style-Solid #E42E2E;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  }
+
+  
+  .toast-default.toast-info.toast-w-shadow{
+    background-color: $Neutral-shade-l;
+    border-left: $Border-width-2 $Border-Style-Solid #3BA2ED;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+    }
+
+    .toast-default.toast-warning.toast-w-shadow{
+      background-color: $Neutral-shade-l;
+      border-left: $Border-width-2 $Border-Style-Solid #E9A700;
+      -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+      }
+
+.toast-default.toast-rounded{
+  border-radius: $Radius-24;
+  h6{
+    color: $Neutral-shade-l;
+  }
+  .close-btn{
+    top: 14px;
+    svg{
+      path{
+        fill: #FFF;
+      }
+    }
+  }
+}
+.toast-default.toast-rounded.toast-success{
+  background-color: #40B993;
+}
+.toast-default.toast-rounded.toast-error{
+  background-color: #D64550;
+}
+.toast-default.toast-rounded.toast-info{
+  background-color: #40A2ED;
+}
+.toast-default.toast-rounded.toast-warning{
+  background-color: #ED9B40;
+}
+
+      
+

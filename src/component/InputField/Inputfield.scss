@@ -1,0 +1,194 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+
+.form-field {
+  width: 100%;
+  margin-bottom: $Spacing-20;
+  label{
+    color: $Cool-shade-a;
+    font-size: $Font-Size-12;
+    font-weight: $Font-Weight-Regular;
+    line-height: $Line-height-22;
+    display: block;
+    padding-bottom: $Spacing-4;
+  }
+  input, select{
+    background-color: $Cool-shade-j;
+    padding: $Spacing-8 $Spacing-16;
+    border: $Border-width-1 $Border-Style-Solid  $Cool-shade-j;
+    color: $Cool-shade-e;
+    font-size: $Font-Size-16;
+    font-weight: $Font-Weight-Medium;
+    line-height: $Line-height-28;
+    appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    &:focus{
+      background-color: $Neutral-shade-l;
+      border-color: $Brand-shade-c;
+      outline: none;
+    }
+    &:hover{
+      background-color: $Neutral-shade-l;
+      border-color: $Brand-shade-c;
+      outline: none;
+    }
+  }
+  
+  .input-with-icon{
+    position: relative;
+    .input-icon{
+      position: absolute;
+       left: 16px;
+       top: 12px;
+    }
+    .pass-eye-icon{
+      position: absolute;
+      right: 16px;
+      top: 12px;
+    }
+    input, select{
+      padding: $Spacing-8 $Spacing-40;
+    }
+  }
+}
+
+.form-field.invalid, .form-field.form-field-border.invalid{
+  input, select{
+    background-color: rgba( $Brand-shade-red, 0.06) !important;
+    border-color: $Brand-shade-red !important;
+  }
+}
+
+.form-field, .form-field-border{
+  input:disabled, select:disabled{
+     background-color:$Cool-shade-i !important;
+     &:hover{
+      border-color: $Cool-shade-i !important;
+     }
+  }
+}
+
+.form-field.form-round{
+  input, select{
+    border-radius: $Radius-4;
+  }
+}
+
+.form-field.form-rounded{
+  input, select{
+    border-radius: $Radius-24;
+  }
+}
+
+.form-field.form-field-border{
+   input, select{
+    background-color: $Neutral-shade-l;
+    border-color: $Cool-shade-g;
+   }
+}
+
+.form-field.form-field-border{
+   input, select{
+    background-color: $Neutral-shade-l;
+    border-color: $Cool-shade-g;
+    &:focus{
+      background-color: $Neutral-shade-l;
+      border-color: $Brand-shade-c;
+      outline: none;
+    }
+    &:hover{
+      background-color: $Neutral-shade-l;
+      border-color: $Brand-shade-c;
+      outline: none;
+    }
+   }
+}
+
+.form-field.form-field-line {
+     input, select{
+      background-color: $Neutral-shade-l;
+      border: none;
+      border-bottom: $Border-width-1 $Border-Style-Solid $Cool-shade-g;
+     }
+}
+
+.form-field.form-field-line{
+  position: relative;
+  input, select{
+   background-color: $Neutral-shade-l;
+   border: none;
+   border-bottom: $Border-width-1 $Border-Style-Solid $Cool-shade-g;
+   padding: $Spacing-24 $Spacing-40 $Spacing-10;
+   &:focus{
+    border-color: $Brand-shade-c;
+   }
+   &:hover{
+    border-color: $Brand-shade-c;
+   }
+  }
+  .input-with-icon{
+    input, select{
+        padding: $Spacing-24 $Spacing-40 $Spacing-10;
+    }
+    .input-icon, .pass-eye-icon{
+       top: 20px;
+    }
+  }
+  label{
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 42px;
+    z-index: 0;
+    opacity: 0;
+  }
+}
+
+.form-field.form-field-line.form-field-line-focus-label{
+  label{
+    bottom: 32px;
+    left: 42px;
+    z-index: 1;
+    opacity: 1;
+  }
+}
+
+.form-field.form-field-line.form-field-box {
+  input, select{
+   background-color: $Cool-shade-j;
+   border: $Border-width-1 $Border-Style-Solid $Cool-shade-j;
+   &:focus{
+    border-color: $Brand-shade-c;
+    background-color: $Neutral-shade-l;
+   }
+   &:hover{
+    border-color: $Brand-shade-c;
+    background-color: $Neutral-shade-l;
+   }
+  }
+}
+
+.form-field.form-field-line.form-field-outline {
+  input, select{
+   background-color: $Neutral-shade-l;
+   border: $Border-width-1 $Border-Style-Solid $Cool-shade-g;
+   &:focus{
+    border-color: $Brand-shade-c;
+    background-color: $Neutral-shade-l;
+   }
+   &:hover{
+    border-color: $Brand-shade-c;
+    background-color: $Neutral-shade-l;
+   }
+  }
+}
+
+
+
+
+
+
+
