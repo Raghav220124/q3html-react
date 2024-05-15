@@ -1,0 +1,122 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+@use '../../assets/css/elevation.scss' as *;
+
+.tabs{
+  max-width: 200px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  li{
+     a{
+      display: block;
+      padding:$Spacing-12 $Spacing-16;
+      color: $Cool-shade-e;
+      font-size: $Font-Size-14;
+      font-weight: $Font-Weight-Medium;
+      line-height: $Line-height-24;
+      text-decoration: none;
+      i{
+        vertical-align: middle;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      padding-right: $Spacing-12;
+       }
+       &:hover{
+        background-color: #F4F4F4;
+        color: $Cool-shade-a;
+        i{
+          svg{
+            path{
+              fill: $Cool-shade;
+            }
+          }
+        }
+       }
+     }
+     a.active{
+        background-color: $Brand-shade-c;
+        color: $Neutral-shade-l;
+        i{
+          svg{
+            path{
+              fill: $Neutral-shade-l;
+            }
+          }
+        }
+     }
+  }
+}   
+.tabs.tabs-smooth{
+  a{
+    border-radius: $Radius-4;
+  }
+}
+
+.tabs.tabs-soft{
+  a{
+    border-radius: $Radius-8;
+  }
+}
+
+.tabs.tabs-round{
+  a{
+    border-radius: $Radius-36;
+  }
+}
+.tabs.tabs-border{
+  max-width: 120px;
+  a.active{
+    background-color: transparent;
+    color: $Cool-shade-e;
+    font-weight: $Font-Weight-Semibold;
+    color: $Cool-shade-a;
+  }
+  a{
+    text-align: center;
+    &:hover{
+      background-color: transparent;
+      color: $Cool-shade;
+    }
+  }
+
+}
+.tabs.tabs-border.tabs-border-bottom{
+  a.active{
+    border-bottom: $Border-width-2 $Border-Style-Solid $Brand-shade-c;
+  }
+  a{
+    border-bottom: $Border-width-2 $Border-Style-Solid $Neutral-shade-l;
+  }
+}
+
+.tabs.tabs-border.tabs-border-top{
+  a.active{
+    border-top: $Border-width-2 $Border-Style-Solid $Brand-shade-c;
+  }
+  a{
+    border-top: $Border-width-2 $Border-Style-Solid $Neutral-shade-l;
+  }
+}
+
+.tabs.tabs-border.tabs-border-left{
+  a.active{
+    border-left: $Border-width-2 $Border-Style-Solid $Brand-shade-c;
+  }
+  a{
+    border-left: $Border-width-2 $Border-Style-Solid $Neutral-shade-l;
+  }
+}
+
+.tabs.tabs-border.tabs-border-right{
+  a.active{
+    border-right: $Border-width-2 $Border-Style-Solid $Brand-shade-c;
+  }
+  a{
+    border-right: $Border-width-2 $Border-Style-Solid $Neutral-shade-l;
+  }
+}
+

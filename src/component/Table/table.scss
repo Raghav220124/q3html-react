@@ -1,0 +1,82 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+@use '../../assets/css/elevation.scss' as *;
+
+.table{
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+    tr{
+    td, th{
+      border-bottom: $Border-width-1 $Border-Style-Solid $Cool-shade-h;
+      padding: $Spacing-12;
+      font-size: $Font-Size-14;
+      color: $Cool-shade-d;
+      font-weight: $Font-Weight-Medium;
+    }
+    th{
+      background-color: $Cool-shade-k;
+      color: $Cool-shade;
+      font-weight: $Font-Weight-Semibold;
+    }
+  }
+}
+
+.text-green{
+   color:#36992F;
+   font-weight:$Font-Weight-Semibold;
+   
+}
+
+.text-new{
+  color:#3CA2FC;
+  font-weight:$Font-Weight-Semibold;
+  
+}
+
+.user-deatils-bx{
+  display: flex;
+  img{width: 42px;
+     height: 42px;
+     border-radius: $Radius-32;
+     margin-right: $Spacing-10;
+  }
+  .name{
+    font-size: $Font-Size-14;
+    color: $Cool-shade;
+    font-weight: $Font-Weight-Semibold;
+    line-height: $Line-height-22;
+    display: block;
+  }
+  .email{
+    font-size: $Font-Size-14;
+    color: $Cool-shade-d;
+    font-weight: $Font-Weight-Medium;
+    line-height: $Line-height-18;
+  }
+ 
+}
+
+.action-bx{
+  a{
+    padding:0 $Spacing-4;
+    display: inline-block;
+  }
+}
+.table-v2{
+  thead{
+    th{
+      background-color: transparent;
+    }
+  }   tr{
+    &:hover{
+      td{
+        background-color: $Cool-shade-k; 
+      }
+    }
+  }
+}      
+

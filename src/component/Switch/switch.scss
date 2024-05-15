@@ -1,0 +1,89 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+@use '../../assets/css/elevation.scss' as *;
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked + .slider{
+      background-color: $Cool-shade-j;
+    }
+    &:focus + .slider{
+      background-color: $Brand-shade-green;
+    }
+    &:checked + .slider:before{
+      -webkit-transform: translateX(15px);
+      -ms-transform: translateX(15px);
+      transform: translateX(15px);
+    }
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $Cool-shade-j;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: $Radius-32;
+    &::before{
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 2px;
+      bottom: 2px;
+      background-color: $Neutral-shade-l;
+      -webkit-transition: .4s;
+      transition: .4s;
+       border-radius: $Radius-32;
+    }
+  }
+}
+.switch.switch-lg{
+  width: 46px;
+  .slider {
+    &::before{
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+    }
+  }
+  input{
+    &:checked + .slider:before{
+      -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      transform: translateX(20px);
+    }
+  }
+}
+.switch.switch-line{
+  height: 12px;
+  .slider {
+    &::before{
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.14);
+      left: 0;
+       bottom: -4px;
+    }
+  }
+  input{
+    &:checked + .slider:before{
+      -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      transform: translateX(20px);
+    }
+}
+}
+

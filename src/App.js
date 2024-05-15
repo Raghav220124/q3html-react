@@ -13,6 +13,9 @@ import InputField from './component/InputField/InputField.js';
 import Pagination from './component/Pagination/pagination.js';
 import TextArea from './component/TextArea/textarea.js';
 import Toast from './component/Toast/Toast.js';
+import Table from './component/Table/Table.js';
+import Tabbar from './component/Tabbar/Tabbar.js';
+import Switch from './component/Switch/Switch.js';
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"></link>
 function App() {
   return (
@@ -45,6 +48,9 @@ function App() {
       <Pagination/>
       <TextArea/>
       <Toast/>
+      <Table/>
+      <Tabbar/>
+      <Switch/>
     </div>
   );
 }
