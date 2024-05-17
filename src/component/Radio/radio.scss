@@ -1,0 +1,105 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+
+/* label container */
+.radio-button-container {
+  color: rgba(0,0,0,0.75);
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  line-height: 25px;
+  margin-bottom: 12px;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: $Neutral-shade-l;
+    border:$Border-width-2 $Border-Style-Solid  $Cool-shade-g;;
+    transition: all 0.3s;
+    &::after{
+      top: -1px;
+      left: -1px;
+      width: 22px;
+      height: 22px;
+      background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMiAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuNSA1TDQuNSA4TDEwLjUgMS41IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNiIvPgo8L3N2Zz4K), $Brand-shade-c;
+     background-position: center !important;
+     background-repeat: no-repeat !important;
+     content: "";
+     position: absolute;
+     display: none;
+    }
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    &:checked{
+      ~ .checkmark{
+        &:after{
+          display: block;
+        }
+      }
+    }
+  }
+}
+.radio-button-container.radio-soft{
+  .checkmark{
+    border-radius: $Radius-1;
+    &::after{
+      border-radius: $Radius-1;
+    }
+  }
+}
+
+.radio-button-container.radio-smooth{
+  .checkmark{
+    border-radius: $Radius-2;
+    &::after{
+      border-radius: $Radius-2;
+    }
+  }
+}
+
+.radio-button-container.radio-round{
+  .checkmark{
+    border-radius: $Radius-16;
+    &::after{
+      border-radius: $Radius-16;
+    }
+  }
+}
+
+.radio-button-container.radio-border{
+  .checkmark{
+    &::after{
+      background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMiAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuNSA1TDQuNSA4TDEwLjUgMS41IiBzdHJva2U9IiMyNzU5Q0MiIHN0cm9rZS13aWR0aD0iMS42Ii8+Cjwvc3ZnPgo=), $Neutral-shade-l;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  input {
+    &:checked{
+      ~ .checkmark{
+         border-color: $Brand-shade-c;
+      }
+    }
+  }
+}
+
+
+
+

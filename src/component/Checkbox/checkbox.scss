@@ -3,24 +3,131 @@
 @use '../../assets/css/spacing.scss' as *;
 @use '../../assets/css/border.scss' as *;
 
-.checkbox{
-  display: inline-block;
-  label{
-    input{
-      margin: 0;
-      opacity: 0;
-      &label:checked .custom-mark{
-        background-color: $Brand-shade-b;
-      }
-    }
-    .custom-mark{
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      background-color: $Cool-shade-j;
-      line-height: 20px;
-      text-align: center;
-    }  
+/* The container */
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: $Spacing-24;
+  margin-bottom: $Spacing-12;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+   color: $Cool-shade-a;
+    font-size: $Font-Size-12;
+    font-weight: $Font-Weight-Regular;
+    line-height: $Line-height-22;
+  input {
+    position: absolute;
+    opacity: 0;
     cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ .checkmark{
+      background-color: $Brand-shade-b;
+    }
+    &:checked ~ .checkmark{
+     &:after{
+      display: block;
+     }
+    }
+    &:disabled{
+      &:checked ~ .checkmark{
+        background-color: $Cool-shade-j;
+      }
+      &:disabled{
+      ~ .checkmark{
+        &:after{
+          border-color:$Cool-shade-g;
+        }
+       }
+    }
+    }
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: $Cool-shade-j;
+    &:after{
+      content: "";
+      position: absolute;
+      display: none;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 $Border-width-3 $Border-width-3 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-radius: $Radius-1;
+    }
   }
 }
+
+.checkbox.checkbox-md{
+  .checkmark {
+    width: 16px;
+    height: 16px;
+    &::after{
+      width: 4px;
+      height: 8px;
+      left: 5px;
+       top: 2px;
+    }
+  }
+}
+
+.checkbox.checkbox-sm{
+  .checkmark {
+    width: 14px;
+    height: 14px;
+    &::after{
+      width: 3px;
+      height: 6px;
+      left: 5px;
+      top: 2px;
+      border-width: 0 $Border-width-2 $Border-width-2 0;
+    }
+  }
+}
+
+.checkbox.checkbox-smooth{
+  .checkmark{
+    border-radius: $Radius-2;
+  }
+}
+
+.checkbox.checkbox-round{
+  .checkmark{
+    border-radius: $Radius-8;
+  }
+}
+
+.checkbox.checkbox-border{
+  .checkmark{
+    background-color: $Neutral-shade-l;
+    border: $Border-width-1 $Border-Style-Solid $Cool-shade-g;
+    box-sizing: border-box;
+  }
+  input{
+    &:checked{
+      ~ .checkmark{
+        border-color: $Brand-shade-b;
+      }
+    }
+    &:disabled{
+      &:checked ~ .checkmark{
+        border-color: $Cool-shade-j;
+      }
+  }
+}
+
+}
+
+

@@ -16,6 +16,8 @@ import Toast from './component/Toast/Toast.js';
 import Table from './component/Table/Table.js';
 import Tabbar from './component/Tabbar/Tabbar.js';
 import Switch from './component/Switch/Switch.js';
+import Radio from './component/Radio/Radio.js';
+import Loader from './component/Loader/Loader.js';
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"></link>
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
       <Table/>
       <Tabbar/>
       <Switch/>
+      <Radio/>
+      <Loader/>
     </div>
   );
 }
