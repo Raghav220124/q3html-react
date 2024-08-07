@@ -233,14 +233,17 @@ $Brand-shade-green: #1D7C4D;
 .brand-green{
     background-color: $Brand-shade-green;
 }
-
-
-
 .color-sec h1{
     color: $Cool-shade-a;
+    margin:0;
+    background: rgb(223,224,255);
+    background: linear-gradient(90deg, rgba(223,224,255,1) 0%, rgba(255,236,254,1) 50%);
+    padding: 72px;
+    border-radius: 32px;
 }
 .color-outer-bx{
     display: flex;
+    margin-top: 20px;
 }
 .sub-heading{
     font-size: 16px;
@@ -250,18 +253,6 @@ $Brand-shade-green: #1D7C4D;
 }
 .color-sec{
     padding: 32px;
-}
-$Spacing-192: 192px;
-.color-sec h1{
-    margin:0;
-    background: rgb(223,224,255);
-    background: linear-gradient(90deg, rgba(223,224,255,1) 0%, rgba(255,236,254,1) 50%);
-    padding: 72px;
-    border-radius: 32px;
-}
-
-.color-outer-bx {
-    margin-top: 20px;
 }
 .color-outer-bx .color-bx{
     width: 89px;
