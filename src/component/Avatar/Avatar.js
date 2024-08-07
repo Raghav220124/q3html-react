@@ -1,16 +1,23 @@
 import AvaterImg from "../../assets/images/avatar-img.png";
 import AvaterDImg from "../../assets/images/avatar-default.svg";
 import  './avatar.scss';
-import './avatar-layout.scss';
+import '../../assets/css/comon.scss';
 
 
 function Avatar() {
   return (
     <>
-       <h1>Avatar</h1>
-       <p>Avatar profiles allow people to share more information about themselves.</p>
+    <div className="container">
+       <div className="common-heading-bx">
+            <h1>Avatar</h1>
+            <p>Avatar profiles allow people to share more information about themselves.</p>
+       </div>
+
+        <h6 className='sub-heading'>Inline Alerts</h6>
+        <p className='sub-heading-bottom-text'>Main Component</p>
        
       <div className="avatar-border-main-bx">
+      <div className="avatar-sub-bx">
           <div className="avatar-border-bx">
           <div className="avatar-bx avatar-96">
               <img className="avatar-96" alt="avatar" src={AvaterImg} />
@@ -82,7 +89,8 @@ function Avatar() {
               <img className="avatar-24 border-radius-192" alt="avatar" src={AvaterImg} />
           </div>
           </div>
-
+         </div>
+         <div className="avatar-sub-bx">
           <div className="avatar-border-bx">
                 <div className="avatar-bx-name avatar-bx-name-96 avatar-96">
                       <span>SS</span>
@@ -154,7 +162,8 @@ function Avatar() {
                       <span className="border-radius-192">SS</span>
                 </div>
           </div>
-
+          </div>
+          <div className="avatar-sub-bx">
           <div className="avatar-border-bx">
           <div className="avatar-bx avatar-96">
               <img className="avatar-96" alt="avatar" src={AvaterDImg} />
@@ -226,6 +235,8 @@ function Avatar() {
               <img className="avatar-24 border-radius-192" alt="avatar" src={AvaterDImg} />
           </div>
           </div>
+          </div>
+      </div>
       </div>
     </>
 

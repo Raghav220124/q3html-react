@@ -1,0 +1,34 @@
+@use '../../assets/css/color.scss' as *;
+@use '../../assets/css/font.scss' as *;
+@use '../../assets/css/spacing.scss' as *;
+@use '../../assets/css/border.scss' as *;
+@use '../../assets/css/elevation.scss' as *;
+@use '../../assets/css/color.scss' as *;
+.accordion{
+  margin-bottom: $Spacing-16;
+}
+.accordion .accordion-header{
+  padding: $Spacing-12 $Spacing-16;
+  background-color: $Neutral-shade-l;
+  width:100%;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom:$Border-width-1 $Border-Style-Solid $Cool-shade-h;
+  font-weight: $Font-Weight-Medium;
+  font-size: $Font-Size-16;
+  line-height: $Line-height-24;
+}
+.accordion .accordion-header i{
+  margin-right: $Spacing-12;
+}
+.accordion .accordion-body{
+  background-color: $Cool-shade-k;
+  padding: $Spacing-12;
+  font-weight: $Font-Weight-Regular;
+  font-size: $Font-Size-16;
+  color: $Cool-shade-d;
+  line-height: $Line-height-24;
+}

@@ -1,14 +1,17 @@
 import './alerts.scss';
-import './alerts-layout.scss';
+import '../../assets/css/comon.scss';
 
 
 function InlineAlert() {
     return (
         <>
+        <div className='container'>
+            <div className='common-heading-bx'>
             <h1>Inline Alerts</h1>
             <p>The alert message shows important messages to the user about the result of his action.</p>
-            <h6>Inline Alerts</h6>
-            <h6>Main Component</h6>
+            </div>
+            <h6 className='sub-heading'>Inline Alerts</h6>
+            <p className='sub-heading-bottom-text'>Main Component</p>
 
             <div className="alerts-main-bx">
                 <div className='alert-default'>
@@ -41,11 +44,9 @@ function InlineAlert() {
                 </div>
             </div>
 
-            <h6>Alert Type</h6>
-            <h6>Default Message</h6>
+            <h6 className='sub-heading mt-80'>Alert Type</h6>
+            <p className='sub-heading-bottom-text'>Default Message</p>
           
-
-            <h6>Default Message</h6>
             <div className="alerts-main-bx">
                  <div className='alert-default alert-default-v2'>
                     <div>
@@ -92,7 +93,7 @@ function InlineAlert() {
                     </div>
                 </div>
             </div>
-            <h6>Success Message</h6>
+            <p className='sub-heading-bottom-text'>Success Message</p>
             <div className="alerts-main-bx">
                  <div className='alert-default alert-success'>
                     <div>
@@ -139,7 +140,7 @@ function InlineAlert() {
                     </div>
                 </div>
             </div>
-            <h6>Warning Message</h6>
+            <p className='sub-heading-bottom-text'>Warning Message</p>
             <div className="alerts-main-bx">
                  <div className='alert-default alert-warning'>
                     <div>
@@ -158,7 +159,7 @@ function InlineAlert() {
                     </div>
                 </div>
             </div>
-            <h6>Negative Message</h6>
+            <p className='sub-heading-bottom-text'>Negative Message</p>
             <div className="alerts-main-bx">
                  <div className='alert-default alert-negative'>
                     <div className='msg'>
@@ -183,7 +184,7 @@ function InlineAlert() {
                 </div>
             </div>
 
-            <h6>Alert Styles</h6>
+            <h6 className='sub-heading mt-80'>Alert Styles</h6>
             <div className="alerts-main-bx">
                  <div className='alert-default'>
                     <div>
@@ -239,7 +240,8 @@ function InlineAlert() {
                             </svg>
                         </a>
                 </div>
-                </div>
+            </div>
+            </div>
         </>
 
     );

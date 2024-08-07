@@ -1,14 +1,20 @@
 import './alerts.scss';
-import './alerts-layout.scss';
+import '../../assets/css/comon.scss';
 
 
 function FullWidthAlert() {
     return (
         <>
-            <h1>Fullwidth Alerts</h1>
-            <p>The alert message shows important messages to the user about the result of his action.</p>
-            <h6>Fullwidth Alerts</h6>
-            <h6>Main Component</h6>
+        <div className="container">
+              
+              <div className='common-heading-bx'>
+                  <h1>Fullwidth Alerts</h1>
+                  <p>The alert message shows important messages to the user about the result of his action.</p>
+              </div>
+           
+           
+            <h6 className='sub-heading'>Fullwidth Alerts</h6>
+            <p className='sub-heading-bottom-text'>Main Component</p>
 
             <div className="alerts-main-bx">
                 <div className='alert-default alert-full-width'>
@@ -41,11 +47,9 @@ function FullWidthAlert() {
                 </div>
             </div>
 
-            <h6>Alert Type</h6>
-            <h6>Default Message</h6>
-          
-
-            <h6>Default Message</h6>
+            <h6 className='sub-heading'>Alert Type</h6>
+            <p className='sub-heading-bottom-text'>Default Message</p>
+         
             <div className="alerts-main-bx alerts-main-bx-full-width">
                  <div className='alert-default alert-full-width alert-default-v2'>
                     <div>
@@ -92,7 +96,7 @@ function FullWidthAlert() {
                     </div>
                 </div>
             </div>
-            <h6>Success Message</h6>
+            <p className='sub-heading-bottom-text'>Success Message</p>
             <div className="alerts-main-bx alerts-main-bx-full-width">
                  <div className='alert-default alert-success alert-full-width'>
                     <div>
@@ -139,7 +143,7 @@ function FullWidthAlert() {
                     </div>
                 </div>
             </div>
-            <h6>Warning Message</h6>
+            <p className='sub-heading-bottom-text'>Warning Message</p>
             <div className="alerts-main-bx alerts-main-bx-full-width">
                  <div className='alert-default alert-warning alert-full-width'>
                     <div>
@@ -158,7 +162,7 @@ function FullWidthAlert() {
                     </div>
                 </div>
             </div>
-            <h6>Negative Message</h6>
+            <p className='sub-heading-bottom-text'>Negative Message</p>
             <div className="alerts-main-bx alerts-main-bx-full-width">
                  <div className='alert-default alert-negative alert-full-width'>
                     <div className='msg'>
@@ -183,7 +187,7 @@ function FullWidthAlert() {
                 </div>
             </div>
 
-            <h6>Alert Styles</h6>
+            <h6 className='sub-heading'>Alert Styles</h6>
             <div className="alerts-main-bxa alerts-main-bx-full-width">
                  <div className='alert-default alert-full-width'>
                     <div>
@@ -205,6 +209,7 @@ function FullWidthAlert() {
                         <span>Please upgrade to the new version.</span>
                     </div>
                 </div>
+                <br/>
                 <div className='alert-default rounded border-radius-192 alert-full-width'>
                     <div>
                         <span>Please upgrade to the new version.</span>
@@ -239,7 +244,8 @@ function FullWidthAlert() {
                             </svg>
                         </a>
                 </div>
-                </div>
+            </div>
+            </div>
         </>
 
     );
