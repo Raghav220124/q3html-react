@@ -1,12 +1,12 @@
-import "./breadcrum.scss";
-import "./breadcrum-layout.scss";
+import "./breadcrumb.scss";
+import "./breadcrumb-layout.scss";
 
-function Breadcrum() {
+function Breadcrumb() {
   return (
     <>
-      <h1>Breadcrum</h1>
+      <h1>Breadcrumb</h1>
       <p>Main Component</p>
-      <div className="Breadcrum-border-main-bx">
+      <div className="Breadcrumb-border-main-bx">
         <nav className="breadcrumb-nav" aria-label="breadcrumb">
           <ol className="breadcrumb">
             <i>
@@ -163,4 +163,4 @@ function Breadcrum() {
   );
 }
 
-export default Breadcrum;
+export default Breadcrumb;

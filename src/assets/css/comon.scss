@@ -4,9 +4,44 @@ $myFontSize: 20px;
 $myWidth: 680px;
 $bgColor:#fff;
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: $myFont;
   font-size: $myFontSize;
   color: $myColor;
   background-color: $bgColor;
+}
+
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  .sidebar{
+    width: 180px;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+    h1{
+      font-size: $myFontSize;
+    }
+    ul{
+      list-style-type: none;
+      li{
+        a{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  main{
+    width: calc(100% - 180px);
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
 }
