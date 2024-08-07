@@ -34,6 +34,10 @@ body {
       li{
         a{
           font-size: 15px;
+          text-decoration: none;
+        }
+        :hover{
+          background-color: #f6f6f6;
         }
       }
     }
@@ -43,5 +47,6 @@ body {
     height: 100%;
     overflow-y: auto;
     overflow-x: auto;
+    padding: 10px;
   }
 }
