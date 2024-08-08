@@ -1,20 +1,15 @@
 import './InputField.scss';
-// import { FiEye } from "react-icons/ai";
-import { AiFillDiff } from "react-icons/ai";
 
 function InputField() {
   return (
     <>
      <h1>Input Fields</h1>
      <div className="input-main">
+          <label> Label </label>
           <div className="input-inner">
-               <form className="input-box">
-          {/* <input icon={<AiOutlineUser />} type={'text'} placeholder={'Enter User Name'} />
-          <input icon={<AiOutlineUser />} type={'text'} placeholder={'Enter Business Name'} />
-          <input icon={<AiOutlineMail />} type={'text'} placeholder={'Enter your Email'} /> */}
-           <input type='text' placeholder="text" icon='' /> 
-        </form>
-        <AiFillDiff />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="user"><path d="M16 14a6 6 0 1 0-6-6A6 6 0 0 0 16 14zM16 4a4 4 0 1 1-4 4A4 4 0 0 1 16 4zM16 16A10 10 0 0 0 6 26v3a1 1 0 0 0 2 0V26a8 8 0 0 1 16 0v3a1 1 0 0 0 2 0V26A10 10 0 0 0 16 16z"></path></svg>
+            <input type="text" placeholder="Enter Lable " />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="eye"><path d="M21.92,11.6C19.9,6.91,16.1,4,12,4S4.1,6.91,2.08,11.6a1,1,0,0,0,0,.8C4.1,17.09,7.9,20,12,20s7.9-2.91,9.92-7.6A1,1,0,0,0,21.92,11.6ZM12,18c-3.17,0-6.17-2.29-7.9-6C5.83,8.29,8.83,6,12,6s6.17,2.29,7.9,6C18.17,15.71,15.17,18,12,18ZM12,8a4,4,0,1,0,4,4A4,4,0,0,0,12,8Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,14Z"></path></svg> 
           </div>
      </div> 
     </>
