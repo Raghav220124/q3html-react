@@ -19,6 +19,7 @@ import Switch from './component/Switch/Switch.js';
 import Radio from './component/Radio/Radio.js';
 import Loader from './component/Loader/Loader.js';
 import Accordion from './component/Accordion/Accordion.js';
+import ProgressBar from './component/ProgressBar/ProgressBar.js';
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"></link>
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
       <Radio/>
       <Loader/>
       <Accordion/>
+      <ProgressBar/>
     </div>
   );
 }
